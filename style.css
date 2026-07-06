@@ -1,0 +1,114 @@
+/* Fondo */
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#1b1b2f,#16213e);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    color:white;
+}
+
+/* Tarjeta principal */
+.contenedor{
+    width:450px;
+    background:rgba(255,255,255,0.08);
+    border-radius:20px;
+    padding:25px;
+    box-shadow:0 8px 30px rgba(0,0,0,0.4);
+    backdrop-filter:blur(8px);
+}
+
+/* Título */
+.titulo{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:15px;
+    margin-bottom:20px;
+}
+
+#logo{
+    width:55px;
+    height:55px;
+    object-fit:contain;
+}
+
+/* Botón agregar */
+.btn-agregar{
+    display:block;
+    background:#4f8cff;
+    text-align:center;
+    padding:12px;
+    border-radius:12px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn-agregar:hover{
+    background:#3b75e0;
+}
+
+/* Lista de canciones */
+#lista-canciones{
+    list-style:none;
+    padding:0;
+    margin:20px 0;
+    max-height:250px;
+    overflow-y:auto;
+}
+
+#lista-canciones li{
+    background:rgba(255,255,255,0.08);
+    margin-bottom:10px;
+    padding:10px;
+    border-radius:10px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+/* Botones */
+.acciones button,
+.controles button{
+    border:none;
+    padding:8px 12px;
+    border-radius:8px;
+    cursor:pointer;
+    margin-left:5px;
+    font-size:16px;
+    transition:0.2s;
+}
+
+.acciones button:hover,
+.controles button:hover{
+    transform:scale(1.05);
+}
+
+/* Reproductor */
+.reproductor{
+    text-align:center;
+    margin-top:20px;
+}
+
+#progreso{
+    width:100%;
+    margin:15px 0;
+}
+
+.controles{
+    margin:15px 0;
+}
+
+/* Volumen */
+.volumen{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+#volumen{
+    flex:1;
+}
